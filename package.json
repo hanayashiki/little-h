@@ -1,17 +1,18 @@
 {
   "name": "little-h",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A tiny (1Kb) library that builds the dom",
   "repository": "https://github.com/hanayashiki/little-h",
-  "source": "src/index.js",            
+  "source": "src/index.js",
   "exports": "./dist/index.modern.js",
-  "main": "./dist/index.js",          
-  "module": "./dist/index.module.js", 
+  "main": "./dist/index.js",
+  "module": "./dist/index.module.js",
   "unpkg": "./dist/index.umd.js",
   "types": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn microbundle --generateTypes false"
+    "build": "yarn microbundle --generateTypes false",
+    "prepare": "yarn build"
   },
   "keywords": [
     "react",
