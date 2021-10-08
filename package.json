@@ -2,6 +2,7 @@
   "name": "little-h",
   "version": "0.0.1",
   "description": "A tiny (1Kb) library that builds the dom",
+  "repository": "https://github.com/hanayashiki/little-h",
   "source": "src/index.js",            
   "exports": "./dist/index.modern.js",
   "main": "./dist/index.js",          
