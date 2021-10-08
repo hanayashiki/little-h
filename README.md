@@ -1,5 +1,11 @@
 # Little H
 
++ No transpiler bullshit.
+
++ Use react-like API to build the UI, but does not help you update it frequently.
+
++ Ignorable 1Kb size.
+
 ```html
 <html>
   <head>
@@ -15,7 +21,7 @@
   </head>
   <body>
     <script type="module">
-      import { h } from 'xxx';
+      import { h } from 'https://unpkg.com/little-h@latest/dist/index.module.js';
 
       const Header = () => {
         return h('div',
@@ -29,6 +35,42 @@
     </script>
   </body>
 </html>
-
-
 ```
+
+## Installation
+
+1. Install via package manager
+
+    ```
+    yarn add light-h
+    # npm i light-h
+    ```
+
+2. Import via ECMAScript Module
+
+    ```html
+    <script type="module">
+      import { h } from 'https://unpkg.com/little-h@latest/dist/index.module.js';
+
+      // do something with h
+
+    </script>
+    ```
+
+    Make sure you have `type="module"` in the script attributes and your browser (thankfully) supports necesssary ES6 features.
+
+## API Reference
+
++ `h(component, [props], [...children])`
+  + Create a element (virtual dom) representing the UI you want to build.
+
++ `useRef`
+  + [useRef](https://reactjs.org/docs/hooks-reference.html#useref) hook
+
++ `useEffect`
+  + [useEffect](https://reactjs.org/docs/hooks-reference.html#useeffect) hook
+
++ `Element.render`
+  + Build the virtual element into HTML element.
+
+
