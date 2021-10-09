@@ -117,7 +117,6 @@ export type HtmlTags =
   | "wbr"
   | "webview"
   | "svg"
-  | ""
   | "animate"
   | "animateMotion"
   | "animateTransform"
