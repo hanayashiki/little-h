@@ -42,8 +42,8 @@
 1. Install via package manager
 
     ```
-    yarn add light-h
-    # npm i light-h
+    yarn add little-h
+    # npm i little-h
     ```
 
 2. Import via ECMAScript Module
